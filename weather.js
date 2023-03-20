@@ -19,7 +19,7 @@ async function showResults(value) {
     return;
   }
   const data = await fetch(
-    `${apiDetails.url}weather?q=${value}&units=metric&APPID=${apiDetails.api_key}`
+    `https://api.openweathermap.org/data/2.5/weather?q=${value}&units=metric&APPID=60bbd59ec7556e88c0f6b5a2080aebaa`
   );
 
   const fdata = await data.json();
