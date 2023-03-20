@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://images.theconversation.com/files/442675/original/file-20220126-17-1i0g402.jpg?ixlib=rb-1.1.0&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  height: 125vh;
+  flex-direction: column;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 20 px;
+  max-width: 500px;
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 16px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 15px;
+  border: 2px solid black;
+  font-weight: 400;
+}
+.input:focus {
+  background-color: ghostwhite;
+}
+.box {
+  flex: 1 1 100%;
+  display: none;
+  padding: 25px 25px 50px;
+}
+.location-city {
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.location-date {
+  font-size: 30px;
+  font-family: "Kanit";
+  font-weight: 300;
+  text-align: center;
+}
+.temperature-temp {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+}
+span {
+  font-weight: 500;
+}
+.temperature-type {
+  font-family: "Dosis", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+}
+.temperature-range {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.humidity {
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+h1 {
+  /* color: yellow;
+  background: linear-gradient(to bottom, red, black);
+  animation-name: appear;
+  animation-duration: 20s; */
+
+  text-align: center;
+  margin-top: 0px;
+  font-size: 40px;
+  height: 100px;
+  padding-top: 25px;
+  /* font-family: "Dosis", sans-serif; */
+  font-weight: 600;
+  font-size: 70px;
+  font-weight: 600;
+  background-image: repeating-linear-gradient(
+    to right,
+    #553c9a,
+    orange 10%,
+    #541af4 20%
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+#cls {
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+#cls:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+#cls:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.info {
+  margin-left: 580px;
+  margin-top: 20px;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  color: black;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20201012/pngtree-white-cloud-on-blue-sky-weather-background-image_410050.jpg");
+}
+h3 {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 36px;
+  margin: 0 0 24px;
+  text-align: center;
+}
+#weather-img {
+  width: 400px;
+  height: 120px;
+}
+#head-img {
+  width: 400px;
+  height: 400px;
+}
+#head {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+@keyframes appear {
+  from {
+    color: yellow;
+  }
+  to {
+    color: white;
+  }
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
