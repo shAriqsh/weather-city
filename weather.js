@@ -23,7 +23,7 @@ async function showResults(value) {
   );
 
   const fdata = await data.json();
-  if (fdata.message === "city not found") {
+  if (fdata.cod === "404") {
     infoBox.innerText = `CITY NOT FOUND`;
   } else {
     infoBox.style.display = "flex";
