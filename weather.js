@@ -35,7 +35,7 @@ async function showResults(value) {
     infoBox.style.flexDirection = "column";
     infoBox.style.justifyContent = "center";
     infoBox.style.alignItems = "center";
-    infoBox.innerHTML = `CITY NOT FOUND`;
+    infoBox.innerText = `CITY NOT FOUND`;
   } else {
     infoBox.style.display = "flex";
     infoBox.style.flexDirection = "column";
